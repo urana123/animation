@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+    <link rel="stylesheet" href="sanchir.css">
+</head>
+
+<body>
+    <section>
+        <div id="circle" class="circle"></div>
+        <header>
+            <a href="#"><img src="./starbucks.png" class="logo"></a>
+            <ul>
+                <li><a href="zzz.html">Photos</a></li>
+                <li><a href="ccc.html">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It is not just Coffee<br>It is <span>Starbucks</span></h2>
+                <p>Starbucks was founded by Jerry Baldwin, Gordon Bowker, and Zev Siegl, opening its first store in 1971 near the historic Pike Place Market in Seattle. The three Starbucks founders had two things in common: they were all coming from academia, and they all loved coffee and tea. They invested and borrowed some money to open the first store in Seattle and named it “Starbucks” after the first mate, Starbuck, in Herman Melville’s classic novel Moby Dick.
+                    Alfred Peet, a coffee-roasting entrepreneur, was a major inspiration to the founders of Starbucks. Peet was a Dutch immigrant who had begun importing fine arabica coffees into the United States during the 1950s. In 1966 he opened a small store, Peet’s Coffee and Tea, in Berkeley, California, that specialized in importing first-rate coffees and teas. Peet’s success encouraged the Starbucks founders to base their business model on selling high-quality coffee beans and equipment, and Peet’s became the initial supplier of green coffee beans to Starbucks.</p>
+                <a href="https://www.starbucks.com/">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./sanchir1.png" width="310px" height="500px" class="starbucks" id="starbucks">
+            </div>
+        </div>
+        <ul class="img">
+            <li><img width="300px" height="300px" src="./img1.png" onclick="imgSlider('img1.png', '#017143')"></li>
+            <li><img width="300px" height="300px" src="./img2.png" onclick="imgSlider('img2.png', 'white    ')"></li>
+            <li><img width="300px" height="290px" src="./img3.png" onclick="imgSlider('img3.png', 'brown')"></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything, color) {
+            document.getElementById('starbucks').src = anything;
+            document.getElementById('circle').style.background = color
+
+        }
+    </script>
+</body>
+
+</html>

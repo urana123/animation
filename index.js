@@ -54,7 +54,7 @@ class Particle {
             && y >= this.y - this.radius
             && this.text === 'Tselmeg'
         ) {
-            console.log(this.text);
+            window.location = 'sanchir.html'
         }
 
         if (x >= this.x - this.radius 
@@ -62,28 +62,22 @@ class Particle {
             && y <= this.y + this.radius 
             && y >= this.y - this.radius
             && this.text === 'Zolboot'
-        ) {
-            console.log(this.text);
-        }
+        ) {window.location = 'site.html'}
 
         if (x >= this.x - this.radius 
             && x <= this.x + this.radius 
             && y <= this.y + this.radius 
             && y >= this.y - this.radius
             && this.text === 'Sanchir'
-        ) {
-            console.log(this.text);
-        }
+        ) {window.location = 'sanchir.html' }
 
-        
+
         if (x >= this.x - this.radius 
             && x <= this.x + this.radius 
             && y <= this.y + this.radius 
             && y >= this.y - this.radius
             && this.text === 'Dulguun'
-        ) {
-            console.log(this.text);
-        }
+        ) {window.location = 'duolingo.html' }
     }
 }
 

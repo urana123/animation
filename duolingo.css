@@ -1,0 +1,183 @@
+body {
+    background-color: #235390;
+
+}
+
+.container {
+    width: 100vw;
+    height: 1000px;
+    background-image: url('https://d35aaqx5ub95lt.cloudfront.net/images/star-pattern.svg');
+}
+
+.between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.duolingo {
+    color: rgb(255, 255, 255);
+    height: 40px;
+    width: 160px;
+    padding-left: 400px;
+    padding-top: 20px;
+
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 600px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: 'DynaPuff', cursive;
+}
+
+.durvuljin {
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    grid-template-rows: repeat(5, 20px);
+    position: absolute;
+    display: none;
+    width: 500px;
+    height: 600px;
+    left: 1150px;
+    top: 70px;
+    background-color: white;
+    border: 2px solid rgb(157, 155, 155);
+    border-radius: 15px;
+    z-index: 9;
+}
+
+.language:hover+.durvuljin {
+    display: flex;
+}
+
+
+.child {
+
+    z-index: -1;
+    position: absolute;
+    bottom: 590px;
+    left: 400px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    /* border: 2px solid rgb(157, 155, 155); */
+    transform: rotate(45deg);
+}
+
+.country {
+    display: grid;
+    grid-template-columns: 200px 230px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    gap: 15px;
+    margin-top: 10px;
+
+
+}
+.photo-img {
+    width: 90px;
+    height: 40px;
+}
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 10px;
+    font-family:  'DynaPuff', cursive;
+}
+.photo:hover {
+    border-radius: 15px;
+    background-color: rgb(174, 170, 170);
+    cursor: pointer;
+}
+
+.main {
+    height: 90vh;
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wordOne {
+
+    align-items: center;
+    text-align: center;
+    font-family: 'DynaPuff', cursive;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    width: 650px;
+
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.earth {
+    width: 360px;
+    height: 360px;
+    animation-name: delhii;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+
+}
+@keyframes delhii{
+    to{
+        transform: rotate(360deg) translateX(-40px);
+        
+    }
+}
+
+.wordTwo {
+    height: 46px;
+    width: 360px;
+    border-radius: 15px;
+    border: none;
+    background-color: #58CC02;
+    color: white;
+    font-family: 'DynaPuff', cursive;
+    box-shadow: 0px 5px 0px 0 #58a700;
+    transition: 1s;
+}
+
+.wordTwo:hover {
+cursor: pointer;
+    background-color: rgb(130, 217, 130);
+
+}
+
+.wordThree {
+    height: 46px;
+    width: 360px;
+    border-radius: 15px;
+    border: 2px solid #042c60;
+    color: white;
+    background-color: #235390;
+    font-family: 'DynaPuff', cursive;
+    box-shadow: 0px 3px 0px 0 #042c60;
+    transition: 1s;
+}
+
+.wordThree:hover {
+    background-color: rgb(43, 74, 126);
+}
+.nuhult{
+    height: 70vh;
+    width: 100vw;
+}
+.nuhult2{
+    height: 70vh;
+    width: 100vw;
+}
